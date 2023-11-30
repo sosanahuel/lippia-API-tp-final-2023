@@ -1,0 +1,17 @@
+{
+  "url": "{{base.url}}",
+  "headers": {
+    "X-Api-Key": "{{api-key}}",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "billable": true,
+    "description": "{{nombreTiempo}}",
+    "end": "{{fechaFin}}",
+    "projectId": "{{projectId}}",
+    "start": "{{fechaInicio}}",
+    "tagIds": [],
+    "taskId": ""
+  },
+  "endpoint": "/workspaces/{{workspaceId}}/time-entries/{{idTime}}"
+}
