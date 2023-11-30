@@ -1,3 +1,4 @@
+@Clockify
 Feature: Crear, editar y eliminar tiempos de clockify
 
   @GetTimeEntry
@@ -9,7 +10,7 @@ Feature: Crear, editar y eliminar tiempos de clockify
     And obtengo el user
     When I perform a '<operation>' to '<entity>' endpoint with the '<jsonName>' and ''
     And se obtuvo el status code <status>
-    Then se obtiene los tiempos
+    Then se obtien los tiempos
     Examples:
       | operation | entity      | jsonName              | status |
       | GET       | GET_TIEMPOS | tiempo/obtenerTiempos | 200    |
@@ -41,8 +42,8 @@ Feature: Crear, editar y eliminar tiempos de clockify
     When I perform a '<operation>' to '<entity>' endpoint with the '<jsonName>' and ''
     Then se obtuvo el status code <status>
     Examples:
-      | operation | entity        | jsonName            | status | horasInicio | horasFin   | nombre         | nuevoNombre         |
-      | PUT       | EDITAR_TIEMPO | tiempo/editarTiempo | 200    | 2023-11-20  | 2023-11-27 | CrowdarAcademy | NuevoCrowdarAcademy |
+      | operation | entity        | jsonName            | status | horasInicio | horasFin   | nombre               | nuevoNombre         |
+      | PUT       | EDITAR_TIEMPO | tiempo/editarTiempo | 200    | 2023-11-20  | 2023-11-27 | CrowdarAcademyEditar | NuevoCrowdarAcademy |
 
   @TimeEntryDelete
   Scenario Outline: Crear y elimina la hora para el usuario

@@ -7,5 +7,5 @@ Feature: Workspaces
     And se obtuvo el status code <status>
     Then obtengo el response
     Examples:
-      | operation | entity    | jsonName            | status |
-      | GET       | WORKSPACE | workspace/workspace | 200    |
+      | operation | entity             | jsonName            | status |
+      | GET       | ESPACIO_DE_TRABAJO | workspace/workspace | 200    |

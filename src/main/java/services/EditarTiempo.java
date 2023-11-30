@@ -20,6 +20,7 @@ public class EditarTiempo extends BaseService{
         params.put("fechaInicio", TIEMPO_INICIO.get());
         params.put("workspaceId",PRIMER_ESPACIO_DE_TRABAJO.get());
         params.put("idTime",TIEMPO_NUEVO_ID.get());
+        params.put("projectId",ID_PROYECTO.get());
         return params;
     }
 }
